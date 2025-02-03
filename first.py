@@ -1,9 +1,12 @@
-def max_of_two(x, y):
-    if x > y:
-        return x
-    return y
+#this program about create list and multipy each index of the list
+lst=[]
+n=int(input("Enter number: "))
+for i in range(n):
+    data=int(input("Enter data elements: "))
+    lst.append(data)
+print(lst)
 
-def max_of_three(x, y, z):
-    return max_of_two(x, max_of_two(y, z))
-
-print(max_of_three(3, 6, -5)) 
+x=1
+for i in lst:
+    x=x*i
+print(x)
